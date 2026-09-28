@@ -2,196 +2,232 @@
 <html lang="uk">
 <head>
 <meta charset="utf-8">
-  <meta name="p:domain_verify" content="cc257505095991ce7f1dcfe1a7e1b198"/>
+<meta name="p:domain_verify" content="cc257505095991ce7f1dcfe1a7e1b198"/>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#160409">
-<meta name="description" content="Портфоліо візуальної художниці Вікторії ROMA: акварель, живопис, кераміка.">
+<meta name="theme-color" content="#170509">
+<meta name="description" content="Портфоліо візуальної художниці Вікторії ROMA: акварель, живопис, кераміка. Оригінали до продажу.">
 <title>Вікторія Рома</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@400;500&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400&family=Manrope:wght@300;400;500;600&display=swap">
 <style>
-/* One committed look: the deep wine of the velvet the works are photographed on. */
+/* Layout after Shopify's "Studio" theme for artists: quiet grid, product cards, one sans-serif family.
+   Colours stay the deep wine of the velvet the watercolours are photographed on. */
 :root{
-  --bg:#160409; --surface:#210a11; --ink:#F2E8E4; --muted:#BCA1A6; --line:#4A2029;
+  --bg:#170509; --surface:#22090f; --ink:#F4ECE8; --muted:#B7A0A4; --line:rgba(244,236,232,.14);
   --accent:#F0A79F; --sold:#E5566B;
-  --display:"Playfair Display",Georgia,serif;
-  --serif:"Spectral",Georgia,"Times New Roman",serif;
-  --label:"Jost","Helvetica Neue",Arial,sans-serif;
-  --dw:400;
+  --font:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --wide:"Unbounded","Manrope",Arial,sans-serif;
   color-scheme:dark;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;background:#160409;scroll-padding-top:var(--hh,64px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.62 var(--serif);-webkit-font-smoothing:antialiased}
+html{scroll-behavior:smooth;background:var(--bg);scroll-padding-top:var(--hh,64px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--font);-webkit-font-smoothing:antialiased}
 a{color:inherit}
 button{font:inherit;color:inherit}
+img{max-width:100%}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-.wrap{max-width:1240px;margin-inline:auto;padding-inline:clamp(16px,4vw,48px)}
-.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 12px;font:500 0.79rem var(--label);z-index:20}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:clamp(16px,4vw,48px)}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 12px;z-index:20}
 .skip:focus{left:8px}
 
-/* header — stays pinned to the top while scrolling */
-.top{position:sticky;top:0;z-index:10;background:rgba(22,4,9,.93);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 28px;padding-block:14px;border-bottom:1px solid var(--line)}
-.brand{font:500 0.82rem/1 var(--label);letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
-.nav{display:flex;flex-wrap:wrap;gap:8px 24px}
-.nav a{font:400 0.76rem/1 var(--label);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;padding-block:6px}
-.nav a:hover{color:var(--accent)}
-.lang{display:flex;border:1px solid var(--ink)}
-.lang button{font:500 0.74rem/1 var(--label);letter-spacing:.1em;padding:8px 11px;background:none;border:0;cursor:pointer}
-.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+/* header */
+.top{position:sticky;top:0;z-index:10;background:rgba(23,5,9,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 28px;padding-block:16px}
+.brand{font-weight:600;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.nav{display:flex;flex-wrap:wrap;gap:6px 26px}
+.nav a{font-size:.9rem;color:var(--muted);text-decoration:none;padding-block:4px}
+.nav a:hover{color:var(--ink)}
+.lang{display:flex;gap:12px}
+.lang button{font-size:.82rem;font-weight:500;letter-spacing:.06em;padding:4px 0;background:none;border:0;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{color:var(--ink);text-decoration:underline;text-underline-offset:5px}
 
-/* type bits */
-.kicker{font:500 0.76rem/1.2 var(--label);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
-h1,h2,h3{font-family:var(--display);font-weight:var(--dw);margin:0;text-wrap:balance}
-h2{font-weight:var(--dw);font-size:clamp(2.05rem,7.2vw,3.60rem);line-height:1.08;letter-spacing:-.005em;margin-bottom:20px}
-.btn{display:inline-flex;align-items:center;gap:10px;font:500 0.78rem/1 var(--label);letter-spacing:.09em;text-transform:uppercase;text-decoration:none;padding:15px 22px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);white-space:nowrap;justify-content:center;transition:background .2s,border-color .2s,color .2s}
+/* type */
+h1,h2,h3{font-weight:500;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:clamp(1.8rem,4.4vw,2.6rem);line-height:1.12;margin-bottom:14px}
+.lead{color:var(--muted);max-width:40rem;margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-size:.9rem;font-weight:500;text-decoration:none;padding:14px 26px;border:1px solid var(--ink);background:var(--ink);color:var(--bg);white-space:nowrap;transition:background .2s,border-color .2s,color .2s}
 .btn:hover{background:var(--accent);border-color:var(--accent)}
 .btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:transparent;border-color:var(--accent);color:var(--accent)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent);background:transparent}
+.row{display:flex;flex-wrap:wrap;gap:10px 12px}
 
 /* hero */
-.hero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(28px,5vw,72px);align-items:end;padding-block:clamp(36px,6vw,84px) clamp(56px,8vw,112px)}
-.hero h1{font-weight:var(--dw);font-size:clamp(3.30rem,13.5vw,8.40rem);line-height:.95;margin:0 0 clamp(22px,3vw,36px)}
-.hero h1 span{display:block}
-.hero h1 .n1{font-style:italic;letter-spacing:-.02em;font-weight:400}
-.hero h1 .n2{font-weight:var(--dw);letter-spacing:.08em;font-size:.84em}
-.lede{font:400 clamp(1.20rem,4.6vw,1.70rem)/1.35 var(--display);max-width:28rem;margin:0 0 28px}
-.cta{display:flex;flex-wrap:wrap;gap:10px 12px}
-.btn .sm{display:none}
-.feature{margin:0;justify-self:end;width:100%;max-width:440px}
-.feature .frame{aspect-ratio:4/5;background:var(--surface);box-shadow:0 30px 60px -30px #000}
-.feature img{display:block;width:100%;height:100%;object-fit:cover}
-.feature figcaption{font:italic 400 .98rem/1.4 var(--serif);color:var(--muted);margin-top:12px}
-.feature figcaption em{color:var(--ink)}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:center;padding-block:clamp(32px,6vw,88px) clamp(56px,8vw,112px)}
+.hero h1{font-size:clamp(2.8rem,8.5vw,6rem);line-height:1;font-weight:500;letter-spacing:-.035em;margin:0 0 22px}
+.hero .sub{font-size:.9rem;color:var(--muted);margin:0 0 18px}
+.hero .lede{font-size:clamp(1.1rem,2.2vw,1.35rem);line-height:1.5;font-weight:300;max-width:26rem;margin:0 0 32px}
+.feature{margin:0;justify-self:end;width:100%;max-width:480px}
+.feature img{display:block;width:100%;height:auto}
+.feature figcaption{font-size:.85rem;color:var(--muted);margin-top:10px}
 
 /* sections */
-.sec{padding-block:clamp(56px,9vw,120px);border-top:1px solid var(--line)}
-.sec-head{max-width:44rem;margin-bottom:clamp(20px,4vw,40px)}
-.sec-head p{margin:0;color:var(--muted)}
+.sec{padding-block:clamp(56px,8vw,112px)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 32px;margin-bottom:clamp(24px,4vw,40px)}
+.sec-head>div{max-width:42rem}
 
-/* gallery */
+/* collection tabs + filters */
+.tabs{display:flex;gap:28px;margin-bottom:18px}
+.tabs button{background:none;border:0;padding:0 0 6px;cursor:pointer;font-size:clamp(1.15rem,2.4vw,1.45rem);font-weight:500;color:var(--muted);border-bottom:1px solid transparent}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.tabs button i{font-style:normal;font-size:.6em;vertical-align:super;margin-left:4px;opacity:.7}
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:clamp(24px,4vw,40px)}
-.filters button{font:500 0.74rem/1.2 var(--label);letter-spacing:.09em;text-transform:uppercase;background:none;border:1px solid var(--line);padding:9px 12px;cursor:pointer;color:var(--muted)}
-.filters button:hover{border-color:var(--ink);color:var(--ink)}
+.filters button{font-size:.82rem;background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer;color:var(--muted)}
+.filters button:hover{color:var(--ink);border-color:var(--muted)}
 .filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
-.filters button i{font-style:normal;opacity:.6;margin-left:6px}
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:34px 22px}
-.tile{display:block;padding:0;border:0;background:none;text-align:left;cursor:zoom-in}
-.tile .frame{display:block;aspect-ratio:4/5;background:var(--surface);overflow:hidden}
-.tile img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.tile:hover img{transform:scale(1.035)}
-.tile .cap{display:block;margin-top:12px}
-.tile .cap b{display:block;font-family:var(--display);font-weight:var(--dw);font-size:1.12rem;line-height:1.25}
-.tile .cap small{display:block;font:400 0.76rem/1.5 var(--label);letter-spacing:.06em;color:var(--muted);margin-top:3px}
-.sold{color:var(--sold);font:500 0.72rem/1 var(--label);letter-spacing:.1em;text-transform:uppercase}
-.sold::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--sold);margin-right:6px;transform:translateY(-1px)}
+.filters button i{font-style:normal;opacity:.6;margin-left:5px}
+
+/* product grid */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 22px}
+.card{display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:zoom-in}
+.card .frame{display:block;position:relative;aspect-ratio:4/5;background:var(--surface);overflow:hidden}
+.card img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card.fit .frame{background:var(--bg)}
+.card.fit img{position:absolute;inset:8%;width:84%;height:84%;object-fit:contain}
+.card:hover img{transform:scale(1.03)}
+.card .cap{display:block;margin-top:12px}
+.card .cap b{display:block;font-weight:500;font-size:.98rem;line-height:1.35}
+.card .cap small{display:block;font-size:.84rem;color:var(--muted);margin-top:2px}
+.card .price{display:block;font-size:.95rem;margin-top:6px}
+.sold{color:var(--sold)}
 
 /* projects */
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:40px 26px}
+.feat{display:grid;gap:clamp(48px,7vw,96px)}
+.fp{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,5vw,72px);align-items:center}
+.fp:nth-child(even) .fp-img{order:2}
+.fp-img{display:block;padding:0;border:0;background:var(--surface);cursor:pointer;width:100%}
+.fp-img img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+.fp h3{font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.15;margin-bottom:8px}
+.fp .meta{font-size:.88rem;color:var(--muted);margin:0 0 16px}
+.fp p.txt{margin:0 0 24px;max-width:30rem}
+.others{margin-top:clamp(72px,10vw,128px)}
+.others h3{font-size:1.25rem;margin-bottom:24px}
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 22px}
 .pcard{display:block;width:100%;padding:0;border:0;background:none;text-align:left;cursor:pointer}
-.pcard .frame{display:block;aspect-ratio:3/2;background:var(--surface);overflow:hidden}
+.pcard .frame{display:block;aspect-ratio:1/1;background:var(--surface);overflow:hidden}
 .pcard img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
-.pcard:hover img{transform:scale(1.035)}
-.pcard .cap{display:block;margin-top:12px}
-.pcard .cap b{display:block;font-family:var(--display);font-weight:var(--dw);font-size:1.20rem;line-height:1.25}
-.pcard .cap small{display:block;font:400 0.76rem/1.5 var(--label);letter-spacing:.06em;color:var(--muted);margin-top:3px;text-transform:uppercase}
+.pcard:hover img{transform:scale(1.03)}
+.pcard .cap{display:block;margin-top:10px}
+.pcard .cap b{display:block;font-weight:500;font-size:.95rem;line-height:1.35}
+.pcard .cap small{display:block;font-size:.82rem;color:var(--muted)}
+
+/* project page */
 #pd{background:var(--bg);overflow:auto}
 #pd[open]{display:block;padding:0}
-.pd-in{max-width:1080px;margin:0 auto;padding:72px clamp(16px,4vw,40px) 64px}
-.pd-in h3{font:var(--dw) clamp(2.00rem,7vw,3.20rem)/1.1 var(--display);margin:0 0 12px}
-.pd-meta{font:400 0.76rem/1.6 var(--label);letter-spacing:.06em;color:var(--muted);text-transform:uppercase;margin:0 0 24px}
-.pd-text p{font:400 1.1rem/1.6 var(--serif);max-width:44rem;margin:0 0 1em}
-.pd-links{display:flex;flex-wrap:wrap;gap:12px;margin:12px 0 36px}
-.pd-meta+.pd-meta{margin-top:-14px}
-.pd-text{margin-bottom:28px}
-.pd-grid{columns:3 260px;column-gap:18px}
-.pd-grid button{display:block;width:100%;padding:0;border:0;background:var(--surface);margin:0 0 18px;cursor:zoom-in;break-inside:avoid}
+.pd-in{max-width:1120px;margin:0 auto;padding:72px clamp(16px,4vw,40px) 64px}
+.pd-in h3{font-size:clamp(2rem,6vw,3rem);line-height:1.1;margin:0 0 10px}
+.pd-meta{font-size:.9rem;color:var(--muted);margin:0 0 4px}
+.pd-text{margin:24px 0 28px}
+.pd-text p{max-width:44rem;margin:0 0 1em}
+.pd-links{margin:0 0 36px}
+.pd-grid{columns:3 260px;column-gap:18px;margin-top:32px}
+.pd-grid button{display:block;width:100%;padding:0;border:0;background:var(--surface);margin:0 0 18px;cursor:zoom-in;break-inside:avoid;text-align:left}
 .pd-grid img{display:block;width:100%;height:auto}
+.pd-grid small{display:block;background:var(--bg);font-size:.82rem;color:var(--muted);padding:8px 0 4px}
 .pd-close{z-index:2;background:var(--bg)}
-@media (prefers-reduced-motion:reduce){.pcard img{transition:none}.pcard:hover img{transform:none}}
 
 /* lightbox */
 dialog{border:0;padding:0;background:transparent;color:var(--ink);max-width:none;max-height:none;width:100vw;height:100dvh}
-dialog::backdrop{background:rgba(9,1,4,.94)}
-dialog[open]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:56px 16px 20px}
-.lb-img{max-width:min(92vw,760px);max-height:calc(100dvh - 210px);width:auto;height:auto;object-fit:contain;box-shadow:0 30px 80px -30px #000}
-.lb-cap{text-align:center;max-width:36rem}
-.lb-cap b{display:block;font:var(--dw) 1.55rem/1.25 var(--display)}
-.lb-cap em{display:block;font-style:italic;color:var(--muted);font-size:1rem}
-.lb-cap small{display:block;font:400 0.76rem/1.6 var(--label);letter-spacing:.06em;color:var(--muted);margin-top:8px;text-transform:uppercase}
-.lb-btn{position:fixed;background:none;border:1px solid var(--line);width:46px;height:46px;cursor:pointer;font:400 1.4rem/1 var(--label);display:grid;place-items:center}
-.lb-btn:hover{border-color:var(--accent);color:var(--accent)}
-.lb-close{top:14px;right:14px}
-.lb-prev{left:14px;top:50%;transform:translateY(-50%)}
-.lb-next{right:14px;top:50%;transform:translateY(-50%)}
+dialog::backdrop{background:#0f0306}
+#lb[open]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:56px 16px 20px}
+.lb-img{max-width:min(92vw,900px);max-height:calc(100dvh - 230px);width:auto;height:auto;object-fit:contain}
+.lb-cap{text-align:center;max-width:38rem}
+.lb-cap b{display:block;font-weight:500;font-size:1.3rem;line-height:1.3}
+.lb-cap em{display:block;font-style:normal;color:var(--muted);font-size:.95rem}
+.lb-cap small{display:block;font-size:.85rem;color:var(--muted);margin-top:6px}
+.lb-cap .row{justify-content:center;margin-top:12px}
+.lb-price{font-size:1.1rem;margin:10px 0 0}
+.lb-cap .btn{padding:10px 18px;font-size:.85rem}
+.lb-btn{position:fixed;background:none;border:0;width:46px;height:46px;cursor:pointer;font-size:1.5rem;line-height:1;display:grid;place-items:center;color:var(--muted)}
+.lb-btn:hover{color:var(--ink)}
+.lb-close{top:12px;right:12px}
+.lb-prev{left:10px;top:50%;transform:translateY(-50%)}
+.lb-next{right:10px;top:50%;transform:translateY(-50%)}
 
 /* about */
-.about{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:clamp(28px,6vw,88px);align-items:start}
+.about{display:grid;grid-template-columns:minmax(0,.5fr) minmax(0,1.5fr);gap:clamp(28px,6vw,88px);align-items:start}
 .portrait{margin:0;max-width:260px}
 .portrait img{display:block;width:100%;height:auto;filter:grayscale(1)}
-.portrait figcaption{font:400 0.76rem/1.6 var(--label);letter-spacing:.06em;color:var(--muted);margin-top:14px}
-.statement p{font:400 clamp(1.1rem,2vw,1.4rem)/1.55 var(--serif);margin:0 0 .9em;max-width:38rem}
-.statement p:first-of-type{font-family:var(--display);font-size:clamp(1.55rem,5.6vw,2.40rem);line-height:1.22;font-style:italic;font-weight:400}
+.portrait figcaption{font-size:.85rem;color:var(--muted);margin-top:14px}
+.statement p{font-size:clamp(1.02rem,1.6vw,1.15rem);margin:0 0 .9em;max-width:40rem}
+.statement p:first-of-type{font-size:clamp(1.4rem,3.4vw,2rem);line-height:1.3;font-weight:400;letter-spacing:-.01em}
 
-/* cv (lives inside the About section) */
-.cv-wrap{margin-top:clamp(56px,8vw,104px);padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--line)}
-.cv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(36px,6vw,80px) clamp(28px,6vw,88px)}
-.cv-block h3{font:500 0.78rem/1.2 var(--label);letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+/* cv */
+.cv-wrap{margin-top:clamp(56px,8vw,104px)}
+.cv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(36px,6vw,72px) clamp(28px,6vw,80px)}
+.cv-block h3{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .cv{list-style:none;margin:0;padding:0}
-.cv li{display:grid;grid-template-columns:3.6rem minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
-.cv .yr{font:500 0.84rem/1.9 var(--label);letter-spacing:.04em;color:var(--accent)}
-.cv .tx{font-size:1.02rem;line-height:1.5}
-.cv .tx b{display:block;font-weight:500;font-size:1.05rem}
-.cv .tx small{display:block;font-size:.96rem;color:var(--muted);line-height:1.45}
+.cv li{display:grid;grid-template-columns:3.4rem minmax(0,1fr);gap:14px;padding:10px 0}
+.cv .yr{font-size:.9rem;color:var(--muted)}
+.cv .tx{font-size:.95rem;line-height:1.5}
+.cv .tx b{display:block;font-weight:500}
+.cv .tx small{display:block;font-size:.88rem;color:var(--muted);line-height:1.45}
 
 /* buy */
-.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(24px,5vw,72px);margin:0}
-.facts div{border-top:1px solid var(--ink);padding:16px 0 30px}
-.facts dt{font:500 0.76rem/1.2 var(--label);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
-.facts dd{margin:0;color:var(--muted);max-width:28rem}
-.buy-cta{margin-top:clamp(20px,3vw,36px)}
+.buy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,48px)}
+.buy article{background:var(--surface);padding:clamp(22px,3vw,36px)}
+.buy h3{font-size:1.3rem;margin-bottom:4px}
+.buy .price{font-size:1.05rem;margin:0 0 18px;color:var(--accent)}
+.buy dl{margin:0 0 24px}
+.buy dl div{padding:9px 0}
+.buy dt{font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.buy dd{margin:2px 0 0}
+.note{margin:clamp(20px,3vw,32px) 0 0;color:var(--muted);font-size:.92rem}
 
 /* contact */
-.contact h2{font-size:clamp(2.30rem,9vw,4.60rem);font-style:italic;font-weight:400;max-width:16em}
+.contact h2{font-size:clamp(1.9rem,5vw,3.2rem);max-width:18em;font-weight:400}
 .contact p{margin:0 0 28px;max-width:30rem;color:var(--muted)}
-footer{border-top:1px solid var(--line);padding-block:26px 40px;font:400 0.76rem/1.6 var(--label);letter-spacing:.08em;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+footer .wrap{padding-block:28px 40px;font-size:.82rem;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
 
+
+/* wide, thin display type (in the spirit of the new Jaguar identity) */
+.brand{font-family:var(--wide);font-weight:300;letter-spacing:.14em}
+h1,h2,h3{font-family:var(--wide);font-weight:200;letter-spacing:.01em}
+.hero h1{font-weight:200;letter-spacing:.02em;font-size:clamp(2.3rem,6.6vw,4.8rem);line-height:1.08}
+h2{font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.2}
+.fp h3{font-size:clamp(1.3rem,2.6vw,1.8rem);line-height:1.25}
+.pd-in h3{font-size:clamp(1.6rem,4.4vw,2.5rem);line-height:1.2}
+.others h3{font-size:1.05rem}
+.card .cap b,.pcard .cap b{font-weight:500}
+.buy h3{font-size:1.1rem}
+.cv-block h3{font-family:var(--font);font-weight:600;letter-spacing:.08em}
+.lb-cap b{font-family:var(--wide);font-weight:200;font-size:1.15rem}
+.contact h2{font-weight:200;font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.25}
+.tabs button{font-family:var(--wide);font-weight:300;font-size:clamp(1rem,2vw,1.2rem)}
+.btn{letter-spacing:.04em}
+
+@media (max-width:1000px){
+  .grid,.pgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
 @media (max-width:820px){
   .hero{grid-template-columns:1fr}
-  .feature{justify-self:start;max-width:380px}
+  .feature{justify-self:start;max-width:400px}
+  .fp{grid-template-columns:1fr}
+  .fp:nth-child(even) .fp-img{order:0}
   .about{grid-template-columns:1fr}
   .portrait{max-width:200px}
-  .cv-grid{grid-template-columns:1fr}
+  .cv-grid,.buy{grid-template-columns:1fr}
 }
 @media (max-width:640px){
-  .top{padding-block:10px;gap:8px 16px}
-  .nav{order:3;width:100%;flex-wrap:nowrap;justify-content:space-between;gap:0 6px}
-  .nav a{padding-block:5px;white-space:nowrap;font-size:clamp(.62rem,2.95vw,.78rem);letter-spacing:.07em}
-  .btn{padding:14px 14px;font-size:clamp(.66rem,3vw,.78rem);letter-spacing:.06em}
-  .cta{flex-wrap:nowrap;gap:10px}
-  .cta .btn{flex:1 1 auto;min-width:0;gap:6px}
-  .btn .lg{display:none}
-  .btn .sm{display:inline}
-  .kicker{font-size:.72rem;letter-spacing:.12em}
-  .facts{grid-template-columns:1fr}
-  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 14px}
-  .lb-prev,.lb-next{top:auto;bottom:14px;transform:none}
-  .lb-prev{left:14px}.lb-next{right:14px}
+  .top .wrap{padding-block:12px;gap:8px 16px}
+  .nav{order:3;width:100%;flex-wrap:nowrap;justify-content:space-between;gap:0 8px}
+  .nav a{white-space:nowrap;font-size:clamp(.72rem,3.4vw,.88rem)}
+  .grid,.pgrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 14px}
+  .row .btn{flex:1 1 auto}
+  .lb-prev,.lb-next{top:auto;bottom:10px;transform:none}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.tile img{transition:none}.tile:hover img{transform:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card img,.pcard img{transition:none}.card:hover img,.pcard:hover img{transform:none}}
 </style>
 </head>
 <body>
 
-
 <a class="skip" href="#main" data-i="skip"></a>
-<div class="wrap">
-  <header class="top">
+<header class="top">
+  <div class="wrap">
     <a class="brand" href="#top">Viktoriia ROMA</a>
     <nav class="nav" aria-label="Menu">
       <a href="#works" data-i="nWorks"></a>
-<a href="#projects" data-i="nProjects"></a>
+      <a href="#projects" data-i="nProjects"></a>
       <a href="#about" data-i="nAbout"></a>
       <a href="#buy" data-i="nBuy"></a>
       <a href="#contact" data-i="nContact"></a>
@@ -200,95 +236,100 @@ footer{border-top:1px solid var(--line);padding-block:26px 40px;font:400 0.76rem
       <button type="button" id="lang-uk" data-lang="uk" aria-pressed="true">UA</button>
       <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <div>
-        <p class="kicker" data-i="eyebrow"></p>
-        <h1><span class="n1" data-i="nameA"></span><span class="n2">ROMA</span></h1>
-        <p class="lede" data-i="lede"></p>
-        <div class="cta">
-          <a class="btn" href="#works" data-i="ctaWorks"></a>
-          <a class="btn ghost" href="https://www.saatchiart.com/viktorikaroma" target="_blank" rel="noopener"><span class="lg" data-i="ctaSaatchi"></span><span class="sm" data-i="ctaSaatchiS"></span> <span aria-hidden="true">↗</span></a>
-        </div>
+<main id="main" class="wrap">
+  <section class="hero" id="top">
+    <div>
+      <p class="sub" data-i="eyebrow"></p>
+      <h1><span data-i="nameA"></span> ROMA</h1>
+      <p class="lede" data-i="lede"></p>
+      <div class="row">
+        <a class="btn" href="#works" data-i="ctaWorks"></a>
+        <a class="btn ghost" href="https://www.saatchiart.com/viktorikaroma" target="_blank" rel="noopener" data-i="ctaSaatchi"></a>
       </div>
-      <figure class="feature">
-        <div class="frame"><img src="page_16.jpg" alt="Sweet Heart" width="600" height="750"></div>
-        <figcaption id="featCap"></figcaption>
+    </div>
+    <figure class="feature">
+      <img src="hero.jpg" alt="Sweet Heart" width="518" height="646">
+      <figcaption id="featCap"></figcaption>
+    </figure>
+  </section>
+
+  <section class="sec" id="works">
+    <div class="sec-head"><div><h2 data-i="worksTitle"></h2><p class="lead" data-i="worksLede"></p></div></div>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <div class="filters" id="filters" role="group" aria-label="Series"></div>
+    <div class="grid" id="gallery"></div>
+  </section>
+
+  <section class="sec" id="projects">
+    <div class="sec-head"><div><h2 data-i="projTitle"></h2><p class="lead" data-i="projLede"></p></div></div>
+    <div class="feat" id="featGrid"></div>
+    <div class="others">
+      <h3 data-i="projOther"></h3>
+      <div class="pgrid" id="projGrid"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="sec-head"><div><h2 data-i="aboutTitle"></h2></div></div>
+    <div class="about">
+      <figure class="portrait">
+        <img src="portrait.jpg" alt="Viktoriia ROMA" width="279" height="259">
+        <figcaption data-i="facts"></figcaption>
       </figure>
-    </section>
-
-    <section class="sec" id="works">
-      <div class="sec-head">
-        <p class="kicker" data-i="worksKicker"></p>
-        <h2 data-i="worksTitle"></h2>
-        <p data-i="worksLede"></p>
+      <div class="statement" id="statement"></div>
+    </div>
+    <div class="cv-wrap" id="cv">
+      <div class="sec-head"><div><h2>CV</h2></div></div>
+      <div class="cv-grid">
+        <section class="cv-block"><h3 data-i="cvEdu"></h3><ol class="cv" id="cvEdu"></ol></section>
+        <section class="cv-block"><h3 data-i="cvAwards"></h3><ol class="cv" id="cvAwards"></ol></section>
+        <section class="cv-block"><h3 data-i="cvGroup"></h3><ol class="cv" id="cvGroup"></ol></section>
+        <section class="cv-block"><h3 data-i="cvSolo"></h3><ol class="cv" id="cvSolo"></ol></section>
+        <section class="cv-block"><h3 data-i="cvCur"></h3><ol class="cv" id="cvCur"></ol></section>
       </div>
-      <div class="filters" id="filters" role="group" aria-label="Series"></div>
-      <div class="gallery" id="gallery"></div>
-    </section>
+    </div>
+  </section>
 
-    <section class="sec" id="projects">
-<div class="sec-head">
-<p class="kicker" data-i="projKicker"></p>
-<h2 data-i="projTitle"></h2>
-<p data-i="projLede"></p>
-</div>
-<div class="pgrid" id="projGrid"></div>
-</section>
-
-<section class="sec" id="about">
-      <p class="kicker" data-i="aboutKicker"></p>
-      <div class="about">
-        <figure class="portrait">
-          <img src="portrait.jpg" alt="Viktoriia ROMA" width="279" height="259">
-          <figcaption data-i="facts"></figcaption>
-        </figure>
-        <div class="statement" id="statement"></div>
-      </div>
-
-      <div class="cv-wrap" id="cv">
-        <div class="sec-head"><p class="kicker" data-i="cvKicker"></p><h2>CV</h2></div>
-        <div class="cv-grid">
-          <section class="cv-block"><h3 data-i="cvEdu"></h3><ol class="cv" id="cvEdu"></ol></section>
-          <section class="cv-block"><h3 data-i="cvAwards"></h3><ol class="cv" id="cvAwards"></ol></section>
-          <section class="cv-block"><h3 data-i="cvGroup"></h3><ol class="cv" id="cvGroup"></ol></section>
-          <section class="cv-block"><h3 data-i="cvSolo"></h3><ol class="cv" id="cvSolo"></ol></section>
-          <section class="cv-block"><h3 data-i="cvCur"></h3><ol class="cv" id="cvCur"></ol></section>
+  <section class="sec" id="buy">
+    <div class="sec-head"><div><h2 data-i="buyTitle"></h2><p class="lead" data-i="buyLede"></p></div></div>
+    <div class="buy">
+      <article>
+        <h3 data-i="nWc"></h3>
+        <p class="price" data-i="wcPrice"></p>
+        <dl id="wcFacts"></dl>
+        <div class="row">
+          <a class="btn" href="https://www.etsy.com/shop/ARTbyViktoriiaROMA" target="_blank" rel="noopener" data-i="buyEtsy"></a>
+          <a class="btn ghost" href="https://www.saatchiart.com/viktorikaroma" target="_blank" rel="noopener">Saatchi Art</a>
+          <a class="btn ghost" href="https://yoom.com.ua/artists/viktoriya-romanchuk" target="_blank" rel="noopener">YOOM</a>
         </div>
-      </div>
-    </section>
+      </article>
+      <article>
+        <h3 data-i="nPt"></h3>
+        <p class="price" data-i="ptPrice"></p>
+        <dl id="ptFacts"></dl>
+        <div class="row">
+          <a class="btn" href="https://ig.me/m/viktoriia__roma" target="_blank" rel="noopener" data-i="buyAsk"></a>
+          <a class="btn ghost" href="https://www.saatchiart.com/viktorikaroma" target="_blank" rel="noopener">Saatchi Art</a>
+        </div>
+      </article>
+    </div>
+    <p class="note" data-i="buyNote"></p>
+  </section>
 
-    <section class="sec" id="buy">
-      <div class="sec-head">
-        <p class="kicker" data-i="buyKicker"></p>
-        <h2 data-i="buyTitle"></h2>
-      </div>
-      <dl class="facts" id="facts"></dl>
-      <div class="cta buy-cta">
-        <a class="btn" href="https://www.etsy.com/shop/ARTbyViktoriiaROMA" target="_blank" rel="noopener"><span data-i="buyEtsy"></span> <span aria-hidden="true">↗</span></a>
-        <a class="btn ghost" href="https://www.saatchiart.com/viktorikaroma" target="_blank" rel="noopener"><span data-i="buySaatchi"></span> <span aria-hidden="true">↗</span></a>
-        <a class="btn ghost" href="https://yoom.com.ua/artists/viktoriya-romanchuk" target="_blank" rel="noopener">YOOM <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
+  <section class="sec contact" id="contact">
+    <h2 data-i="tagline"></h2>
+    <p data-i="contactText"></p>
+    <div class="row">
+      <a class="btn" href="https://www.instagram.com/viktoriia__roma/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn ghost" href="https://www.pinterest.com/Viktorii_roma_is/" target="_blank" rel="noopener">Pinterest</a>
+    </div>
+  </section>
+</main>
 
-    <section class="sec contact" id="contact">
-      <p class="kicker" data-i="contactKicker"></p>
-      <h2 data-i="tagline"></h2>
-      <p data-i="contactText"></p>
-      <div class="cta">
-        <a class="btn" href="https://www.instagram.com/viktoriia__roma/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
-        <a class="btn ghost" href="https://www.pinterest.com/Viktorii_roma_is/" target="_blank" rel="noopener">Pinterest <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <span data-i="footL"></span>
-    <span data-i="footR"></span>
-  </footer>
-</div>
+<footer><div class="wrap"><span data-i="footL"></span><span data-i="footR"></span></div></footer>
 
 <dialog id="pd" aria-label="Project"></dialog>
 <dialog id="lb" aria-label="Artwork">
@@ -301,6 +342,7 @@ footer{border-top:1px solid var(--line);padding-block:26px 40px;font:400 0.76rem
 
 <script>
 (function(){
+  var IG='https://ig.me/m/viktoriia__roma';
   var SERIES={
     sweet:['Sweet Heart','Sweet Heart'],
     rabbit:['Тривога білого кролика','White Rabbit Anxiety'],
@@ -309,13 +351,29 @@ footer{border-top:1px solid var(--line);padding-block:26px 40px;font:400 0.76rem
     say:['«Я маю тобі сказати, я маю тобі сказати»','“I Have to Tell You, I Have to Tell You”'],
     fresh:['Нові роботи','New works']
   };
+  var PSERIES={
+    waiting:['Час очікування','Time of Waiting'],
+    frog:['Синя жаба','Blue Frog'],
+    summer:['В останній день літа…','On the last day of summer…'],
+    other:['Інший живопис','Other paintings']
+  };
   var M={
     w:['акварель, папір','watercolor on paper'],
     wp:['акварель, олівець, папір','watercolor and pencil on paper'],
     wt:['акварель, тонований папір','watercolor on toned paper'],
-    wm:['акварель, папір, фольга (мікс-медіа)','watercolor, paper and foil (mixed media)']
+    wm:['акварель, папір, фольга (мікс-медіа)','watercolor, paper and foil (mixed media)'],
+    caoc:['полотно, акрил, олія, вугілля','acrylic, oil and charcoal on canvas'],
+    cac:['полотно, акрил, вугілля','acrylic and charcoal on canvas'],
+    cok:['полотно, олія, останнє харківське вугілля','oil and “the last Kharkiv charcoal” on canvas'],
+    coa:['полотно, олія, акрил','oil and acrylic on canvas'],
+    caok:['полотно, акрил, олія, останнє харківське вугілля','acrylic, oil and “the last Kharkiv charcoal” on canvas'],
+    cak:['полотно, акрил, останнє харківське вугілля','acrylic and “the last Kharkiv charcoal” on canvas'],
+    pca:['папір, вугілля, акрил','charcoal and acrylic on paper'],
+    pvc:['ПВХ, олія','oil on PVC'],
+    co:['полотно, олія','oil on canvas'],
+    cmix:['полотно, змішана техніка','mixed media on canvas']
   };
-  /* id, series, [ua,en], size, year, media, framed, sold */
+  /* watercolours: id, series, [ua,en], size, year, media, framed, sold */
   var W=[
     ['u7_apple_wasps','fresh',['Яблуко з осами','Apple with wasps'],'20×25',2026,'w',0,0],
     ['u8_bird','fresh',['Птах (крило)','Bird (wing)'],'20×20',2026,'w',0,0],
@@ -349,16 +407,40 @@ footer{border-top:1px solid var(--line);padding-block:26px 40px;font:400 0.76rem
     ['page_19','botany',['Ботаніка тілесності','Botany of the Body'],'20×25',2025,'w',1,0],
     ['page_21','sweet',['Шана','Honor'],'18×25',2025,'w',1,0],
     ['page_23','sweet',['Без назви','Untitled'],'13×18',2025,'w',1,0]
-  ].map(function(r){return {id:r[0],s:r[1],t:r[2],size:r[3],y:r[4],m:r[5],f:r[6],sold:r[7]};});
+  ].map(function(r){return {k:'wc',src:r[0]+'.jpg',s:r[1],t:r[2],size:r[3],y:r[4],m:r[5],f:r[6],sold:r[7]};});
 
-  /* projects: slug, images, videos, year, behance url, [ua,en] title, [ua,en] text */
-var PJ=[
-{slug:'sweet-heart',n:1,v:0,y:2026,ws:'sweet',t:['Sweet Heart','Sweet Heart'],m:['Персональна виставка · Акварель, папір · Товариство розвитку і прикрашання міста, Львів, Україна','Solo exhibition · Watercolor on paper · Society for the Development and Beautification of the City, Lviv, Ukraine'],d:['10.03 – 09.04.2026.','10 Mar – 9 Apr 2026.']},
-{slug:'red-is-love',n:5,v:0,y:2024,t:['Червоне то любов?','Is Red Love?'],m:['Серія полотен · Полотно, олія · Львів, Україна','Series of canvases · Oil on canvas · Lviv, Ukraine'],d:['Проєкт було представлено в Галереї ЛНАМ, Львів, 2024.','The project was presented at LNAM Gallery, Lviv, 2024.']},
-{slug:'tree-of-intrusive-thoughts',n:1,v:0,y:2024,t:['Дерево нав’язливих думок','Tree of Intrusive Thoughts'],m:['Полотно, олія, акрил · 210×210 см · Львів, Україна','Oil and acrylic on canvas · 210×210 cm · Lviv, Ukraine'],d:null},
+  /* paintings: file, series, [ua,en], size, year, media, price USD, sold */
+  var P=[
+    ['tree-of-intrusive-thoughts','waiting',['Дерево нав’язливих думок','Tree of Intrusive Thoughts'],'210×210',2024,'coa',3800,0],
+    ['portrait','waiting',['Портрет','Portrait'],'125×85',2024,'cok',1000,0],
+    ['flowers-in-memory','waiting',['Квіти на пам’ять','Flowers in Memory'],'120×80',2024,'cac',1200,0],
+    ['it-is-a-game','waiting',['Це гра (Посттравматичний синдром)','It’s a Game (Post-traumatic Syndrome)'],'160×200',2022,'caok',2000,0],
+    ['mariupol','waiting',['Маріуполь або латентний лібералізм','Mariupol and Latent Liberalism'],'160×200',2022,'caok',2900,0],
+    ['triumphal-arch','waiting',['Тріумфальна арка','Triumphal Arch'],'100×100',2024,'caoc',700,0],
+    ['bratyk','waiting',['Братик','Little Brother'],'150×200',2024,'cok',2800,0],
+    ['internal-combustion','waiting',['Процес внутрішнього згорання','Internal Combustion Process'],'150×200',2022,'caok',2700,0],
+    ['wild-capitalism','waiting',['Дикий капіталізм','Wild Capitalism'],'160×210',2024,'caok',2400,0],
+    ['blue-frog','frog',['Синя жаба','Blue Frog'],'200×160',2023,'co',2800,0],
+    ['mermaid','frog',['Русалка','Mermaid'],'140×80',2020,'pvc',1000,0],
+    ['imprints','other',['Відбитки','Imprints'],'140×200',2020,'cac',2000,0],
+    ['state-of-war','other',['Стан війни','State of War'],'120×80',2022,'cak',900,0],
+    ['earth','other',['Земля','Earth'],'100×100',2022,'cmix',1300,0],
+    ['view-in-window','summer',['Вигляд у вікні','View in the Window'],'40×60',2024,'pca',300,0],
+    ['tenderness','summer',['Ніжність','Tenderness'],'40×60',2024,'pca',300,0],
+    ['pregnancy','summer',['Вагітність','Pregnancy'],'60×40',2024,'pca',300,0],
+    ['two-hearts','summer',['Два серця','Two Hearts'],'60×40',2024,'pca',300,0],
+    ['metal-bloom','summer',['Металевий цвіт','Metal Bloom'],'60×40',2024,'pca',300,0]
+  ].map(function(r){return {k:'pt',src:'projects/pt-'+r[0]+'.jpg',s:r[1],t:r[2],size:r[3],y:r[4],m:r[5],price:r[6],sold:r[7]};});
+
+  /* projects: main (featured) first. n = numbered images in projects/, extra = other images,
+     ws = watercolour series, ps = painting series */
+  var PJ=[
+{slug:'sweet-heart',main:1,lead:['Персональна виставка акварелі. Товариство розвитку і прикрашання міста, Львів, 10.03 – 09.04.2026.','A solo exhibition of watercolors. Society for the Development and Beautification of the City, Lviv, 10 Mar – 9 Apr 2026.'],n:1,v:0,y:2026,ws:'sweet',t:['Sweet Heart','Sweet Heart'],m:['Персональна виставка · Акварель, папір · Товариство розвитку і прикрашання міста, Львів, Україна','Solo exhibition · Watercolor on paper · Society for the Development and Beautification of the City, Lviv, Ukraine'],d:['10.03 – 09.04.2026.','10 Mar – 9 Apr 2026.']},
+{slug:'red-is-love',main:1,extra:['projects/flesh-canvas-01.jpg','projects/flesh-canvas-02.jpg','projects/flesh-canvas-03.jpg'],lead:['Серія полотен, олія. Галерея ЛНАМ, Львів, 2024. До проєкту належить серія «Flesh/Canvas».','A series of oil canvases. LNAM Gallery, Lviv, 2024. The “Flesh/Canvas” series is part of the project.'],n:5,v:0,y:2024,t:['Червоне то любов?','Is Red Love?'],m:['Серія полотен · Полотно, олія · Львів, Україна','Series of canvases · Oil on canvas · Lviv, Ukraine'],d:['Проєкт було представлено в Галереї ЛНАМ, Львів, 2024.\nДо проєкту належить серія «Flesh/Canvas».','The project was presented at LNAM Gallery, Lviv, 2024.\nThe “Flesh/Canvas” series is part of the project.']},
+{slug:'waiting-time',main:1,n:1,ps:'waiting',y:2024,cover:'projects/pt-flowers-in-memory.jpg',t:['Час очікування','Time of Waiting'],lead:['Серія живопису воєнного часу, 2022–2024. Уперше показана на домашній виставці у Львові, 27.12.2024 – 01.01.2025.','A series of wartime paintings, 2022–2024. First shown at a home exhibition in Lviv, 27 Dec 2024 – 1 Jan 2025.'],m:['Серія живопису воєнного часу · Полотно, олія, акрил, останнє харківське вугілля · Львів, Україна','A series of wartime paintings · Oil, acrylic and “the last Kharkiv charcoal” on canvas · Lviv, Ukraine'],d:['Домашня виставка, м. Львів, 27.12.2024 – 01.01.2025.\nДо серії входять роботи «Дерево нав’язливих думок», «Портрет», «Квіти на пам’ять», «Це гра (Посттравматичний синдром)», «Маріуполь або латентний лібералізм», «Тріумфальна арка», «Братик», «Процес внутрішнього згорання» та «Дикий капіталізм».','Home exhibition, Lviv, 27 Dec 2024 – 1 Jan 2025.\nThe series includes “Tree of Intrusive Thoughts”, “Portrait”, “Flowers in Memory”, “It’s a Game (Post-traumatic Syndrome)”, “Mariupol and Latent Liberalism”, “Triumphal Arch”, “Little Brother”, “Internal Combustion Process” and “Wild Capitalism”.']},
+{slug:'blue-frog',n:0,ps:'frog',y:'2020–2023',cover:'projects/pt-blue-frog.jpg',t:['Синя жаба','Blue Frog'],m:['Живопис · Полотно, ПВХ, олія · Львів, Україна','Painting · Oil on canvas and PVC · Lviv, Ukraine'],d:['Персональна виставка «Синя жаба», арт-простір 31, м. Львів, 2023.\nДо проєкту входять роботи «Синя жаба» та «Русалка».','Solo exhibition “Blue Frog”, art space 31, Lviv, 2023.\nThe project includes the works “Blue Frog” and “Mermaid”.']},
+{slug:'last-day-of-summer',n:1,ps:'summer',y:2024,cover:'projects/pt-tenderness.jpg',t:['В останній день літа радує те, що скоро весна','On the last day of summer, it’s a joy that spring is coming soon'],m:['Живопис малих форматів · Папір, вугілля, акрил · 40×60 см','Small-format painting · Charcoal and acrylic on paper · 40×60 cm'],d:['Персональна виставка, Альтернативна кава, м. Львів, 18.08.2024.\nДо проєкту входять роботи «Вигляд у вікні», «Ніжність», «Вагітність», «Два серця» та «Металевий цвіт».','Solo exhibition, Alternative Coffee, Lviv, 18 Aug 2024.\nThe project includes “View in the Window”, “Tenderness”, “Pregnancy”, “Two Hearts” and “Metal Bloom”.']},
 {slug:'chrysalis',n:4,v:0,y:2024,t:['Лялечка','Chrysalis'],m:['Шамот · 32×17×15 см','Chamotte clay · 32×17×15 cm'],d:['Лялечка метелика як форма очікування і завмирання.','The butterfly chrysalis as a form of waiting and stillness.']},
-{slug:'portrait',n:1,v:0,y:2024,t:['Портрет','Portrait'],m:['Полотно, олія, останнє харківське вугілля · 125×85 см · Львів, Україна','Oil and “the last Kharkiv charcoal” on canvas · 125×85 cm · Lviv, Ukraine'],d:null},
-{slug:'flowers-in-memory',n:1,v:0,y:2024,t:['Квіти на пам’ять','Flowers in Memory'],m:['Серія «Стани війни» · Полотно, акрил, вугілля · 120×80 см · Львів, Україна','Series “States of War” · Acrylic and charcoal on canvas · 120×80 cm · Lviv, Ukraine'],d:null},
 {slug:'singing-stones',n:3,v:0,y:2023,t:['Співочі камені','Singing Stones'],m:['Аудіовізуальна інсталяція з 9 «каменів» · Шамот, акустична система · Львів, Україна','Audiovisual installation of 9 “stones” · Chamotte clay, sound system · Lviv, Ukraine'],d:['Створено в рамках проєкту «Могриця. Внутрішньопереміщений ландшафт».','Created as part of the project “Mohrytsia. Internally Displaced Landscape”.']},
 {slug:'flight',n:3,v:0,y:2023,t:['Втеча / Швидкість думки','Escape / Speed of Thought'],m:['Полотно, олія · 100×200 см','Oil on canvas · 100×200 cm'],d:['Робота створена в рамках резиденції «Ціна свободи» Хмельницького художнього музею.','The work was created as part of the “Price of Freedom” residency of the Khmelnytskyi Art Museum.']},
 {slug:'twenty-questions',n:12,v:0,y:2023,t:['20 запитань і 20 відповідей','20 Questions and 20 Answers'],m:['Серія графічних робіт · Папір, лайнер · Тель-Авів, Ізраїль','Series of drawings · Paper, liner · Tel Aviv, Israel'],d:null},
@@ -366,50 +448,14 @@ var PJ=[
 {slug:'plur-90s',n:13,v:0,y:0,url:'https://www.behance.net/gallery/140345605/PLUR-90s',t:['PLUR 90s','PLUR 90s'],d:null},
 {slug:'kreminna',n:5,v:0,y:0,url:'https://www.behance.net/gallery/146515037/kremnnaukrana',t:['Кремінна/Україна','Kreminna/Ukraine'],d:null},
 {slug:'psychology-of-war',n:11,v:2,y:2022,url:'https://www.behance.net/gallery/146520357/psihologja-vjni',t:['Психологія війни','Psychology of War'],d:['Благодійний мистецький пленер УКУ «На межі». Серія «Стани війни»: «Зміна реальності», «Гнів», «Депресія», «Прийняття» (полотно, вугілля, акрил).\nСерія «Стани війни» — про військові дії, які відбуваються у кожного з нас, незалежно від того, де ми перебуваємо.\n«Зміна реальності» — як мить, коли було натиснуто на спусковий гачок: те, що відбулося потім, уже неможливо порівнювати з тим, що існувало до.\n«Гнів» — це не завжди бій, це можуть бути сльози й втеча, але завжди це найпотужніша реакція, яка керує нами. Після цього завжди приходить спустошення.\n«Депресія». Дослідження стверджують, що «через півроку майже всі відчувають зменшення негативних емоцій, проте повного одужання не настає…»\n«Прийняття» — дія, яка зараз не може бути завершена, бо як можна змиритись і прийняти те, що не має кінця й щодня завдає тобі нового болю…','Charity art plein air of the Ukrainian Catholic University “On the Edge”. Series “States of War”: “Change of Reality”, “Anger”, “Depression”, “Acceptance” (canvas, charcoal, acrylic).\nThe “States of War” series is about the hostilities that take place within each of us, regardless of where we are.\n“Change of Reality” is like the moment the trigger was pulled: what happened afterwards can no longer be compared with what existed before.\n“Anger” is not always a fight; it may be tears and flight, but it is always the most powerful reaction, the one that governs us. Emptiness always follows.\n“Depression”. Studies say that “after six months almost everyone feels a decrease in negative emotions, but full recovery does not come…”\n“Acceptance” is an action that cannot be completed now, because how can one come to terms with and accept what has no end and inflicts new pain every day…']},
-{slug:'post-traumatic-syndrome',n:6,v:0,y:0,url:'https://www.behance.net/gallery/145073171/Post-traumatic-syndrome',t:['Посттравматичний синдром','Post-traumatic syndrome'],d:null},
 {slug:'watchman',n:13,v:0,y:2019,url:'https://www.behance.net/gallery/145921019/Watchman',t:['Сторожа','Watchman'],m:['Графічні роботи, перформанс · Полотно, акрил, вугілля · 75×300 см · Київ, Україна','Graphic works, performance · Canvas, acrylic, charcoal · 75×300 cm · Kyiv, Ukraine'],d:['«Образ», що не має окремих рис чи будь-якої іншої персоналізації.\nРоботи створено в пам’ять про друзів, які загинули під час Революції Гідності.','An “image” with no individual features or any other personalisation.\nThe works were created in memory of friends who died during the Revolution of Dignity.']},
 {slug:'cage',n:3,v:0,y:2019,url:'https://www.behance.net/gallery/113725307/Cage',t:['Cage','Cage'],d:['Обмеження й правила: що вони означають у контексті особистої та індивідуальної свободи? Символічна клітка чи захист від «зовнішнього».\nРозміри скульптур: 75×40×330. Матеріал: дерево, металевий дріт. Луцьк, 2019.\nСвоєрідна форма протесту: з одного боку, вона дає право висловити свою точку зору, з іншого — змушує суворо дотримуватися встановлених принципів заради досягнення мети. Ваші думки й бажання обмежені зовнішньою оболонкою, яку ми створюємо самі. Зовнішні стереотипи, правила й страхи будують навколо нас каркас, у якому ми проживаємо все життя. Питання лишається: бути захищеним і жити в клітці — чи жити без захисту, але вільним.\nПроєкт передбачає створення каркасних скульптур, які стають символічною кліткою для реальних людей. Презентація має форму перформансу. Складники: перформанс, інсталяція.','Restrictions and rules: what are they in the context of personal and individual freedom? A symbolic cage, or protection from the “outside”.\nDimensions of the sculptures: 75×40×330. Material: wood, metal wire. Lutsk, 2019.\nA peculiar form of protest which, on the one hand, gives you the right to express your point of view and, on the other, forces you to adhere strictly to the set principles in order to achieve the goal. Your thoughts and desires are limited by the outer shell that we create for ourselves. External stereotypes, rules and fears build a frame around us in which we spend our whole life. The question remains: to be protected and live in a cage, or to live without protection but free.\nThe project involves creating frame sculptures that become a symbolic cage for real people. The presentation takes the form of a performance. Components: performance, installation.']},
-{slug:'flesh-canvas',n:3,v:0,y:0,url:'https://www.behance.net/gallery/101768387/FleshCanvas',t:['Flesh/Canvas','Flesh/Canvas'],d:null},
 {slug:'nyenskans',n:4,v:0,y:0,url:'https://www.behance.net/gallery/146516357/Nyenskans',t:['Nyenskans','Nyenskans'],d:['Ніеншанц (швед. Nyenskans) — шведська фортеця на злитті річок Нева й Охта, на місці якої пізніше постав Санкт-Петербург. Збудована 1611 року для утвердження шведської влади в Інгрії; 1702 року фортецю й місто Ніен захопила Росія під час Північної війни.','Nyenschantz (Nyenskans) was a Swedish fortress at the confluence of the Neva and Okhta rivers, on the site of present-day Saint Petersburg. It was built in 1611 to establish Swedish rule in Ingria; in 1702 the fortress and the town of Nyen were conquered by Russia during the Great Northern War.']},
 {slug:'earth-2022',n:8,v:0,y:'2018–2024',url:'https://www.behance.net/gallery/145068983/Earth-2022',t:['Земля','Earth'],m:['Полотно, олія, віск, земля · 100×100 см · Луцьк, Україна','Oil, wax and soil on canvas · 100×100 cm · Lutsk, Ukraine'],d:null},
-{slug:'mask',n:1,v:0,y:0,url:'https://www.behance.net/gallery/147279021/Mask',t:['Mask','Mask'],d:null},
-{slug:'mariupol',n:16,v:0,y:2022,url:'https://www.behance.net/gallery/144398509/Mariupol-and-Latent-Liberalism',t:['Маріуполь або латентний лібералізм','Mariupol and Latent Liberalism'],m:['Полотно, олія, акрил, останнє харківське вугілля · 160×200 см · Львів, Україна','Oil and acrylic on canvas, “the last Kharkiv charcoal” · 160×200 cm · Lviv, Ukraine'],d:null},
 {slug:'motherland',n:3,v:0,y:'2021–2023',t:['Батьківщина мати','Motherland'],m:['Фанера, олія · 100×70 см · Львів, Україна','Oil on plywood · 100×70 cm · Lviv, Ukraine'],d:null},
 {slug:'active-inaction',n:6,v:0,y:2021,t:['Активна бездіяльність','Active Inaction'],m:['Перформанс, фотодокументація · Резиденція «Contemporary Art Рівне»','Performance, photo documentation · “Contemporary Art Rivne” residency'],d:['Художниця збирає сміття на березі річки, а потім викидає його назад у річку.\nУ цьому випадку активна робота художника дає такий самий результат, як і повна байдужість.\nСам проєкт абсолютно ніяк не впливає на поточну екологічну ситуацію річки.','The artist collects rubbish on the riverbank and then throws it back into the river.\nIn this case the artist’s active work yields the same result as complete indifference.\nThe project itself has absolutely no effect on the river’s current ecological situation.']},
-{slug:'mermaid',n:1,v:0,y:2020,t:['Русалка','Mermaid'],m:['ПВХ, олія · 140×80 см · Львів, Україна','Oil on PVC · 140×80 cm · Lviv, Ukraine'],d:null}
-];
-function pCount(n){
-if(lang!=='uk')return n+(n===1?' image':' images');
-var a=n%10,b=n%100;
-return n+' '+(((a>=2&&a<=4&&(b<10||b>=20))||(a===1&&b!==11))?'зображення':'зображень');
-}
-function pItems(p){var a=[],i;
-for(i=1;i<=p.n;i++)a.push({src:'projects/'+p.slug+'-'+(i<10?'0':'')+i+'.jpg'});
-if(p.ws)W.forEach(function(w){if(w.s===p.ws)a.push({src:w.id+'.jpg',w:w});});
-return a;}
-function pImgs(p){return pItems(p).map(function(x){return x.src;});}
-function renderProjects(){
-var k=li();
-$('projGrid').innerHTML=PJ.map(function(p,i){
-var meta=[];if(p.y)meta.push(p.y);meta.push(pCount(pImgs(p).length));
-return '<button type="button" class="pcard" data-p="'+i+'"><span class="frame"><img loading="lazy" src="'+pImgs(p)[0]+'" alt="'+p.t[1]+'"></span>'+
-'<span class="cap"><b>'+p.t[k]+'</b><small>'+meta.join(' · ')+'</small></span></button>';
-}).join('');
-}
-function openProject(i){
-var t=T[lang],k=li(),p=PJ[i],meta=[];
-pcur=i;
-if(p.y)meta.push(p.y);meta.push(pCount(pImgs(p).length));
-var html='<button type="button" class="lb-btn lb-close pd-close" id="pdClose" aria-label="'+t.close+'">×</button><div class="pd-in"><h3>'+p.t[k]+'</h3><p class="pd-meta">'+meta.join(' · ')+'</p>'+(p.m?'<p class="pd-meta pd-mat">'+p.m[k]+'</p>':'');
-if(p.d)html+='<div class="pd-text">'+p.d[k].split('\n').map(function(s){return '<p>'+s+'</p>';}).join('')+'</div>';
-if(p.url)html+='<div class="pd-links"><a class="btn ghost" href="'+p.url+'" target="_blank" rel="noopener">'+(p.v?t.pVideo:t.pBehance)+' <span aria-hidden="true">↗</span></a></div>';
-html+='<div class="pd-grid">'+pItems(p).map(function(x,j){return '<button type="button" data-j="'+j+'"><img loading="lazy" src="'+x.src+'" alt="'+p.t[1]+' — '+(x.w?x.w.t[1]:(j+1))+'"></button>';}).join('')+'</div></div>';
-$('pd').innerHTML=html;
-if(!$('pd').open)$('pd').showModal();
-$('pd').scrollTop=0;
-}
+  ];
 
-/* CV: [year, ua main, ua sub, en main, en sub] */
   var CV={
     edu:[
       ['2020','M.A. монументального живопису','Львівська національна академія мистецтв','M.A. in Monumental Painting','Lviv National Academy of Arts'],
@@ -440,7 +486,7 @@ $('pd').scrollTop=0;
     solo:[
       ['2026','Виставка «Sweet Heart»','Товариство розвитку і прикрашання міста, м. Львів, Україна · 10.03 – 09.04.2026','Exhibition “Sweet Heart”','Society for the Development and Beautification of the City, Lviv, Ukraine · 10 Mar – 9 Apr 2026'],
             ['2024','Домашня виставка «Час очікування»','м. Львів, Україна · 27.12.2024 – 01.01.2025','Home exhibition “Time of Waiting”','Lviv, Ukraine · 27 Dec 2024 – 1 Jan 2025'],
-            ['2024','Виставка «В останній день літа радує те, що скоро весна»','Альтернативна кава, м. Львів, Україна · 31.08.2024','Exhibition “On the last day of summer, it’s a joy that spring is coming soon”','Alternative Coffee, Lviv, Ukraine · 31 Aug 2024'],
+            ['2024','Виставка «В останній день літа радує те, що скоро весна»','Альтернативна кава, м. Львів, Україна · 18.08.2024','Exhibition “On the last day of summer, it’s a joy that spring is coming soon”','Alternative Coffee, Lviv, Ukraine · 18 Aug 2024'],
       ['2024','Проєкт «Червоне то любов?», Галерея ЛНАМ, м. Львів, Україна','','Project “Is Red Love?”, LNAM Gallery, Lviv, Ukraine',''],
             ['2023','Виставка «++»','Порохова вежа, м. Львів, Україна · 29.10 – 05.11.2023','Exhibition “++”','Powder Tower, Lviv, Ukraine · 29 Oct – 5 Nov 2023'],
       ['2023','Виставка «Синя жаба», арт-простір 31, м. Львів, Україна','','Exhibition “Blue Frog”, art space 31, Lviv, Ukraine',''],
@@ -463,19 +509,23 @@ $('pd').scrollTop=0;
     ]
   };
 
+
   var T={
     uk:{
       skip:'До змісту', nWorks:'Роботи', nProjects:'Проєкти', nAbout:'Про мене', nBuy:'Придбати', nContact:'Контакти',
       eyebrow:'Візуальна художниця · акварель, живопис, кераміка', nameA:'Вікторія',
       lede:'Досліджую поняття абсурду як основний емоційний метод.',
-      ctaWorks:'Дивитися роботи', ctaSaatchi:'Оригінали на Saatchi Art', ctaSaatchiS:'Оригінали · Saatchi',
-      featCap:'<em>Sweet Heart</em> · 2025 · акварель, 20×25 см',
-      worksKicker:'Роботи', worksTitle:'Акварель',
-      worksLede:'Роботи з виставок «Sweet Heart» (Tovarystvo, Львів, 10.03–09.04.2026) та «Я маю тобі сказати, я маю тобі сказати», а також нові роботи. Натисніть на роботу, щоб збільшити.',
-      all:'Усі', sold:'продано', framed:'в рамі', cm:'см', close:'Закрити', prev:'Попередня', next:'Наступна',
-projKicker:'Архів', projTitle:'Проєкти', projLede:'Відео, інсталяції, скульптура й живопис: проєкти, що виходять за межі акварелі. Натисніть на проєкт, щоб побачити всі зображення.', pBehance:'Дивитися на Behance', pVideo:'Відео та повний проєкт — на Behance',
-      aboutKicker:'Про мене',
-      facts:'Вікторія ROMA<br>Народилась 1997 р. на Волині, Україна.<br>Магістр монументального живопису, Львівська національна академія мистецтв, 2020 р.',
+      ctaWorks:'Роботи в продажу', ctaSaatchi:'Saatchi Art',
+      featCap:'Sweet Heart, 2025 · акварель, 20 × 25 см',
+      worksTitle:'Роботи в продажу',
+      worksLede:'Оригінали в єдиному екземплярі: акварель і живопис. Натисніть на роботу, щоб збільшити.',
+      nWc:'Акварель', nPt:'Живопис',
+      all:'Усі', sold:'Продано', framed:'в рамі', cm:'см', close:'Закрити', prev:'Попередня', next:'Наступна',
+      askWork:'Запитати про роботу', from:'',
+      projTitle:'Проєкти', projLede:'Основні проєкти й архів: живопис, відео, інсталяції та скульптура.',
+      projOther:'Інші проєкти', pOpen:'Переглянути проєкт', pBehance:'Дивитися на Behance', pVideo:'Відео та повний проєкт — на Behance',
+      aboutTitle:'Про мене',
+      facts:'Народилась 1997 р. на Волині, Україна.<br>Магістр монументального живопису, Львівська національна академія мистецтв, 2020 р.',
       statement:[
         'Досліджую поняття абсурду як основний емоційний метод.',
         'Моя практика поєднує тілесність та фізіологію із технікою ботанічної точності, створюючи крихкі простори, де перетинаються історичні стереотипи і особисті міфи.',
@@ -483,17 +533,23 @@ projKicker:'Архів', projTitle:'Проєкти', projLede:'Відео, ін�
         'Я сприймаю реальність як змінну конструкцію, балансуючи між хаосом, пам’яттю й уявними конструкціями.',
         'Зараз я працюю в Україні, перетворюючи подієву лінію інфопростору на візуальні абсурди, які опираються простому сприйняттю.'
       ],
-      cvKicker:'Резюме', cvEdu:'Освіта', cvAwards:'Нагороди', cvGroup:'Групові виставки', cvSolo:'Персональні проєкти', cvCur:'Кураторство та сценографія',
-      buyKicker:'Як придбати', buyTitle:'Від майстерні до вашої стіни', buyEtsy:'Магазин на Etsy', buySaatchi:'Saatchi Art',
-      facts2:[
-        ['Ціна','Оригінал 20×25 см у рамі — $205.'],
-        ['Оригінал','Кожна робота існує в єдиному екземплярі.'],
-        ['Сертифікат','Підписаний сертифікат автентичності англійською мовою.'],
+      cvEdu:'Освіта', cvAwards:'Нагороди', cvGroup:'Групові виставки', cvSolo:'Персональні проєкти', cvCur:'Кураторство та сценографія',
+      buyTitle:'Як придбати', buyLede:'Кожна робота існує в єдиному екземплярі й надходить із підписаним сертифікатом автентичності англійською мовою.',
+      wcPrice:'Оригінал 20 × 25 см у рамі — $205',
+      wcFacts:[
+        ['Формат','Папір, від 10 × 15 до 21 × 30 см; більшість робіт — у рамі.'],
         ['Доставка','З України Укрпоштою, 6–14 днів.'],
-        ['Пакування','Бульбашкова плівка, картон і подвійна коробка.'],
-        ['Роботи на замовлення','Наразі не приймаю.']
+        ['Пакування','Бульбашкова плівка, картон і подвійна коробка.']
       ],
-      contactKicker:'Контакти', tagline:'Дивна краса, що вносить почуття у ваш дім.',
+      ptPrice:'Від $300 до $3 800 — ціна вказана біля кожної роботи',
+      ptFacts:[
+        ['Формат','Папір 40 × 60 см; полотно та ПВХ — від 100 × 100 до 210 × 210 см.'],
+        ['Матеріали','Олія, акрил, вугілля, змішана техніка.'],
+        ['Доставка','Спосіб і вартість доставки великих полотен узгоджуємо індивідуально.']
+      ],
+      buyEtsy:'Магазин на Etsy', buyAsk:'Написати щодо живопису',
+      buyNote:'Роботи на замовлення наразі не приймаю.',
+      tagline:'Дивна краса, що вносить почуття у ваш дім.',
       contactText:'Нові роботи та новини — в Instagram і Pinterest.',
       footL:'© 2026 Вікторія ROMA', footR:'Україна'
     },
@@ -501,14 +557,17 @@ projKicker:'Архів', projTitle:'Проєкти', projLede:'Відео, ін�
       skip:'Skip to content', nWorks:'Works', nProjects:'Projects', nAbout:'About', nBuy:'Buy', nContact:'Contact',
       eyebrow:'Visual artist · watercolor, painting, ceramics', nameA:'Viktoriia',
       lede:'I explore the notion of the absurd as a primary emotional method.',
-      ctaWorks:'View works', ctaSaatchi:'Originals on Saatchi Art', ctaSaatchiS:'Originals · Saatchi',
-      featCap:'<em>Sweet Heart</em> · 2025 · watercolor, 20×25 cm',
-      worksKicker:'Works', worksTitle:'Watercolor',
-      worksLede:'Works from the exhibitions “Sweet Heart” (Tovarystvo, Lviv, 10.03–09.04.2026) and “I Have to Tell You, I Have to Tell You”, plus new pieces. Click a work to enlarge.',
-      all:'All', sold:'sold', framed:'framed', cm:'cm', close:'Close', prev:'Previous', next:'Next',
-projKicker:'Archive', projTitle:'Projects', projLede:'Video, installation, sculpture and painting: projects beyond watercolor. Click a project to see all images.', pBehance:'View on Behance', pVideo:'Video and full project on Behance',
-      aboutKicker:'About',
-      facts:'Viktoriia ROMA<br>Born 1997 in Volyn, Ukraine.<br>Master’s in Monumental Painting, Lviv National Academy of Arts, 2020.',
+      ctaWorks:'Works for sale', ctaSaatchi:'Saatchi Art',
+      featCap:'Sweet Heart, 2025 · watercolor, 20 × 25 cm',
+      worksTitle:'Works for sale',
+      worksLede:'One-of-a-kind originals: watercolor and painting. Click a work to enlarge.',
+      nWc:'Watercolor', nPt:'Painting',
+      all:'All', sold:'Sold', framed:'framed', cm:'cm', close:'Close', prev:'Previous', next:'Next',
+      askWork:'Ask about this work', from:'',
+      projTitle:'Projects', projLede:'Main projects and archive: painting, video, installation and sculpture.',
+      projOther:'Other projects', pOpen:'View project', pBehance:'View on Behance', pVideo:'Video and full project on Behance',
+      aboutTitle:'About',
+      facts:'Born 1997 in Volyn, Ukraine.<br>Master’s in Monumental Painting, Lviv National Academy of Arts, 2020.',
       statement:[
         'I explore the notion of the absurd as a primary emotional method.',
         'My practice combines corporeality and physiology with a technique of botanical precision, creating fragile spaces where historical stereotypes and personal myths intersect.',
@@ -516,29 +575,36 @@ projKicker:'Archive', projTitle:'Projects', projLede:'Video, installation, sculp
         'I perceive reality as a mutable construct, balancing between chaos, memory and imagined constructs.',
         'I am currently working in Ukraine, turning the event line of the infospace into visual absurdities that resist simple perception.'
       ],
-      cvKicker:'Curriculum vitae', cvEdu:'Education', cvAwards:'Awards', cvGroup:'Group exhibitions', cvSolo:'Solo projects', cvCur:'Curating and scenography',
-      buyKicker:'How to buy', buyTitle:'From the studio to your wall', buyEtsy:'Shop on Etsy', buySaatchi:'Saatchi Art',
-      facts2:[
-        ['Price','Original, 20×25 cm, framed — $205.'],
-        ['Original','Every piece exists in a single copy.'],
-        ['Certificate','A signed certificate of authenticity, in English.'],
+      cvEdu:'Education', cvAwards:'Awards', cvGroup:'Group exhibitions', cvSolo:'Solo projects', cvCur:'Curating and scenography',
+      buyTitle:'How to buy', buyLede:'Every piece exists in a single copy and comes with a signed certificate of authenticity in English.',
+      wcPrice:'Original, 20 × 25 cm, framed — $205',
+      wcFacts:[
+        ['Format','Paper, from 10 × 15 to 21 × 30 cm; most pieces are framed.'],
         ['Shipping','From Ukraine with Ukrposhta, 6–14 days.'],
-        ['Packaging','Bubble wrap, cardboard and a double box.'],
-        ['Commissions','Not taking any for now.']
+        ['Packaging','Bubble wrap, cardboard and a double box.']
       ],
-      contactKicker:'Contact', tagline:'Strange beauty that brings feeling into your home.',
+      ptPrice:'From $300 to $3,800 — the price is shown with each work',
+      ptFacts:[
+        ['Format','Paper 40 × 60 cm; canvas and PVC from 100 × 100 to 210 × 210 cm.'],
+        ['Media','Oil, acrylic, charcoal, mixed media.'],
+        ['Shipping','Delivery method and cost for large canvases are arranged individually.']
+      ],
+      buyEtsy:'Shop on Etsy', buyAsk:'Enquire about a painting',
+      buyNote:'Not taking commissions for now.',
+      tagline:'Strange beauty that brings feeling into your home.',
       contactText:'New work and news are on Instagram and Pinterest.',
       footL:'© 2026 Viktoriia ROMA', footR:'Ukraine'
     }
   };
 
-  var lang='uk', filter='all', cur=0, list=[], glist=[], pcur=0;
+  var lang='uk', kind='pt', filter='all', cur=0, list=[], glist=[], pcur=0;
   try{var sv=localStorage.getItem('vr-lang');if(sv==='en'||sv==='uk')lang=sv;}catch(e){}
   function $(id){return document.getElementById(id);}
   function li(){return lang==='uk'?0:1;}
   function fmtSize(s){return s.replace('×',' × ')+' '+T[lang].cm;}
+  function fmtPrice(n){return '$'+String(n).replace(/\B(?=(\d{3})+(?!\d))/g,lang==='uk'?' ':',');}
 
-  function cvRows(rows,withSub){
+  function cvRows(rows){
     var k=li();
     return rows.map(function(r){
       var main=r[1+2*k],sub=r[2+2*k];
@@ -546,50 +612,109 @@ projKicker:'Archive', projTitle:'Projects', projLede:'Video, installation, sculp
     }).join('');
   }
 
+  /* works: two collections (painting / watercolour) with series filters */
+  function coll(){return kind==='pt'?P:W;}
+  function sers(){return kind==='pt'?PSERIES:SERIES;}
+  function renderTabs(){
+    var t=T[lang];
+    $('tabs').innerHTML=[['pt',t.nPt,P.length],['wc',t.nWc,W.length]].map(function(x){
+      return '<button type="button" role="tab" data-k="'+x[0]+'" aria-selected="'+(kind===x[0])+'">'+x[1]+'<i>'+x[2]+'</i></button>';
+    }).join('');
+  }
   function renderFilters(){
-    var t=T[lang],keys=Object.keys(SERIES),html='';
+    var t=T[lang],S=sers(),C=coll(),html='';
     function btn(k,label,n){return '<button type="button" data-f="'+k+'" aria-pressed="'+(filter===k)+'">'+label+'<i>'+n+'</i></button>';}
-    html+=btn('all',t.all,W.length);
-    keys.forEach(function(k){
-      var n=W.filter(function(w){return w.s===k;}).length;
-      html+=btn(k,SERIES[k][li()],n);
+    html+=btn('all',t.all,C.length);
+    Object.keys(S).forEach(function(k){
+      var n=C.filter(function(w){return w.s===k;}).length;
+      if(n)html+=btn(k,S[k][li()],n);
     });
     $('filters').innerHTML=html;
   }
-
-  function renderGallery(){
+  function cardHtml(w,i){
     var t=T[lang],k=li();
-    glist=W.filter(function(w){return filter==='all'||w.s===filter;});
-    $('gallery').innerHTML=glist.map(function(w,i){
-      return '<button type="button" class="tile" data-n="'+i+'"><span class="frame"><img loading="lazy" src="'+w.id+'.jpg" alt="'+w.t[1]+'"></span>'+
-        '<span class="cap"><b>'+w.t[k]+'</b><small>'+w.y+' · '+fmtSize(w.size)+'</small>'+
-        (w.sold?'<small><span class="sold">'+t.sold+'</span></small>':'')+'</span></button>';
-    }).join('');
+    var meta=w.y+' · '+fmtSize(w.size);
+    var price=w.sold?'<span class="price sold">'+t.sold+'</span>':(w.price?'<span class="price">'+fmtPrice(w.price)+'</span>':'');
+    return '<button type="button" class="card'+(w.k==='pt'?' fit':'')+'" data-n="'+i+'"><span class="frame"><img loading="lazy" src="'+w.src+'" alt="'+w.t[1]+'"></span>'+
+      '<span class="cap"><b>'+w.t[k]+'</b><small>'+meta+'</small>'+price+'</span></button>';
+  }
+  function renderGallery(){
+    glist=coll().filter(function(w){return filter==='all'||w.s===filter;});
+    $('gallery').innerHTML=glist.map(cardHtml).join('');
   }
 
+  /* lightbox */
+  function workCap(w,extra){
+    var t=T[lang],k=li(),S=w.k==='pt'?PSERIES:SERIES;
+    var line=[w.y,fmtSize(w.size),M[w.m][k]];
+    if(w.f)line.push(t.framed);
+    var h='<b>'+w.t[k]+'</b>'+(w.t[0]!==w.t[1]?'<em>'+w.t[1-k]+'</em>':'')+
+      '<small>'+(extra||S[w.s][k])+'<br>'+line.join(' · ')+'</small>';
+    if(w.sold)h+='<small class="sold">'+t.sold+'</small>';
+    else if(w.price)h+='<p class="lb-price">'+fmtPrice(w.price)+'</p><div class="row"><a class="btn" href="'+IG+'" target="_blank" rel="noopener">'+t.askWork+'</a></div>';
+    return h;
+  }
   function showLb(n){
-    var t=T[lang],k=li(),w=list[n];if(!w)return;
+    var k=li(),w=list[n];if(!w)return;
     cur=n;
     if(w.p!=null){
-$('lbImg').src=w.src;$('lbImg').alt=w.alt;
-if(w.wk){$('lbCap').innerHTML='<b>'+w.wk.t[k]+'</b>'+(w.wk.t[0]!==w.wk.t[1]?'<em>'+w.wk.t[1-k]+'</em>':'')+'<small>'+PJ[w.p].t[k]+'<br>'+w.wk.y+' · '+fmtSize(w.wk.size)+' · '+M[w.wk.m][k]+' · '+(n+1)+' / '+list.length+'</small>';}
-else $('lbCap').innerHTML='<b>'+PJ[w.p].t[k]+'</b><small>'+(n+1)+' / '+list.length+'</small>';
-$('lbPrev').style.visibility=list.length>1?'visible':'hidden';
-$('lbNext').style.visibility=list.length>1?'visible':'hidden';
-return;
-}
-$('lbImg').src=''+w.id+'.jpg';$('lbImg').alt=w.t[1];
-    $('lbCap').innerHTML='<b>'+w.t[k]+'</b>'+(w.t[0]!==w.t[1]?'<em>'+w.t[1-k]+'</em>':'')+
-      '<small>'+SERIES[w.s][k]+'<br>'+w.y+' · '+fmtSize(w.size)+' · '+M[w.m][k]+
-      (w.f?' · '+t.framed:'')+(w.sold?' · '+t.sold:'')+'</small>';
+      $('lbImg').src=w.src;$('lbImg').alt=w.alt;
+      $('lbCap').innerHTML=w.wk?workCap(w.wk,PJ[w.p].t[k]):'<b>'+PJ[w.p].t[k]+'</b><small>'+(n+1)+' / '+list.length+'</small>';
+    }else{
+      $('lbImg').src=w.src;$('lbImg').alt=w.t[1];
+      $('lbCap').innerHTML=workCap(w);
+    }
     $('lbPrev').style.visibility=list.length>1?'visible':'hidden';
     $('lbNext').style.visibility=list.length>1?'visible':'hidden';
   }
   function openLb(n){showLb(n);var d=$('lb');if(!d.open)d.showModal();}
   function step(d){showLb((cur+d+list.length)%list.length);}
 
+  /* projects */
+  function pCount(n){
+    if(lang!=='uk')return n+(n===1?' image':' images');
+    var a=n%10,b=n%100;
+    return n+' '+(((a>=2&&a<=4&&(b<10||b>=20))||(a===1&&b!==11))?'зображення':'зображень');
+  }
+  function pItems(p){var a=[],i;
+    if(p.ps)P.forEach(function(w){if(w.s===p.ps)a.push({src:w.src,w:w});});
+    for(i=1;i<=p.n;i++)a.push({src:'projects/'+p.slug+'-'+(i<10?'0':'')+i+'.jpg'});
+    (p.extra||[]).forEach(function(s){a.push({src:s});});
+    if(p.ws)W.forEach(function(w){if(w.s===p.ws)a.push({src:w.src,w:w});});
+    return a;}
+  function pCover(p){return p.cover||pItems(p)[0].src;}
+  function pMeta(p){var m=[];if(p.y)m.push(p.y);m.push(pCount(pItems(p).length));return m.join(' · ');}
+  function renderProjects(){
+    var t=T[lang],k=li(),f='',o='';
+    PJ.forEach(function(p,i){
+      if(p.main){
+        f+='<article class="fp"><button type="button" class="fp-img" data-p="'+i+'"><img loading="lazy" src="'+pCover(p)+'" alt="'+p.t[1]+'"></button>'+
+          '<div><h3>'+p.t[k]+'</h3><p class="meta">'+pMeta(p)+'</p>'+(p.lead?'<p class="txt">'+p.lead[k]+'</p>':'')+
+          '<button type="button" class="btn ghost" data-p="'+i+'">'+t.pOpen+'</button></div></article>';
+      }else{
+        o+='<button type="button" class="pcard" data-p="'+i+'"><span class="frame"><img loading="lazy" src="'+pCover(p)+'" alt="'+p.t[1]+'"></span>'+
+          '<span class="cap"><b>'+p.t[k]+'</b><small>'+pMeta(p)+'</small></span></button>';
+      }
+    });
+    $('featGrid').innerHTML=f;$('projGrid').innerHTML=o;
+  }
+  function openProject(i){
+    var t=T[lang],k=li(),p=PJ[i];
+    pcur=i;
+    var html='<button type="button" class="lb-btn lb-close pd-close" id="pdClose" aria-label="'+t.close+'">×</button><div class="pd-in"><h3>'+p.t[k]+'</h3><p class="pd-meta">'+pMeta(p)+'</p>'+(p.m?'<p class="pd-meta">'+p.m[k]+'</p>':'');
+    if(p.d)html+='<div class="pd-text">'+p.d[k].split('\n').map(function(s){return '<p>'+s+'</p>';}).join('')+'</div>';
+    if(p.url)html+='<div class="pd-links"><a class="btn ghost" href="'+p.url+'" target="_blank" rel="noopener">'+(p.v?t.pVideo:t.pBehance)+'</a></div>';
+    html+='<div class="pd-grid">'+pItems(p).map(function(x,j){
+      var cap=x.w&&x.w.k==='pt'?'<small>'+x.w.t[k]+' · '+x.w.y+' · '+fmtSize(x.w.size)+'</small>':'';
+      return '<button type="button" data-j="'+j+'"><img loading="lazy" src="'+x.src+'" alt="'+p.t[1]+' — '+(x.w?x.w.t[1]:(j+1))+'">'+cap+'</button>';
+    }).join('')+'</div></div>';
+    $('pd').innerHTML=html;
+    if(!$('pd').open)$('pd').showModal();
+    $('pd').scrollTop=0;
+  }
+
   function render(){
-    var t=T[lang],i,k=li();
+    var t=T[lang],i;
     document.documentElement.lang=lang;
     var nodes=document.querySelectorAll('[data-i]');
     for(i=0;i<nodes.length;i++){var v=t[nodes[i].getAttribute('data-i')];if(v!=null)nodes[i].innerHTML=v;}
@@ -600,14 +725,14 @@ $('lbImg').src=''+w.id+'.jpg';$('lbImg').alt=w.t[1];
     $('cvGroup').innerHTML=cvRows(CV.group);
     $('cvSolo').innerHTML=cvRows(CV.solo);
     $('cvCur').innerHTML=cvRows(CV.cur);
-    $('facts').innerHTML=t.facts2.map(function(f){return '<div><dt>'+f[0]+'</dt><dd>'+f[1]+'</dd></div>';}).join('');
+    function dl(a){return a.map(function(f){return '<div><dt>'+f[0]+'</dt><dd>'+f[1]+'</dd></div>';}).join('');}
+    $('wcFacts').innerHTML=dl(t.wcFacts);$('ptFacts').innerHTML=dl(t.ptFacts);
     $('lbClose').setAttribute('aria-label',t.close);$('lbPrev').setAttribute('aria-label',t.prev);$('lbNext').setAttribute('aria-label',t.next);
     $('lang-uk').setAttribute('aria-pressed',String(lang==='uk'));
     $('lang-en').setAttribute('aria-pressed',String(lang==='en'));
-    renderFilters();renderGallery();
-    renderProjects();
-if($('pd').open){var st=$('pd').scrollTop;openProject(pcur);$('pd').scrollTop=st;}
-if($('lb').open)showLb(Math.min(cur,list.length-1));
+    renderTabs();renderFilters();renderGallery();renderProjects();
+    if($('pd').open){var st=$('pd').scrollTop;openProject(pcur);$('pd').scrollTop=st;}
+    if($('lb').open)showLb(Math.min(cur,list.length-1));
   }
 
   document.querySelector('.lang').addEventListener('click',function(e){
@@ -616,12 +741,16 @@ if($('lb').open)showLb(Math.min(cur,list.length-1));
     try{localStorage.setItem('vr-lang',lang);}catch(err){}
     render();
   });
+  $('tabs').addEventListener('click',function(e){
+    var b=e.target.closest('button[data-k]');if(!b)return;
+    kind=b.getAttribute('data-k');filter='all';renderTabs();renderFilters();renderGallery();
+  });
   $('filters').addEventListener('click',function(e){
     var b=e.target.closest('button[data-f]');if(!b)return;
     filter=b.getAttribute('data-f');renderFilters();renderGallery();
   });
   $('gallery').addEventListener('click',function(e){
-    var b=e.target.closest('.tile');if(!b)return;
+    var b=e.target.closest('.card');if(!b)return;
     list=glist;openLb(+b.getAttribute('data-n'));
   });
   $('lbClose').addEventListener('click',function(){$('lb').close();});
@@ -633,20 +762,18 @@ if($('lb').open)showLb(Math.min(cur,list.length-1));
     if(e.key==='ArrowLeft')step(-1);
     if(e.key==='ArrowRight')step(1);
   });
-$('projGrid').addEventListener('click',function(e){
-var b=e.target.closest('.pcard');if(!b)return;
-openProject(+b.getAttribute('data-p'));
-});
-$('pd').addEventListener('click',function(e){
-if(e.target===this||e.target.closest('#pdClose')){this.close();return;}
-var b=e.target.closest('.pd-grid button');if(!b)return;
-var p=PJ[pcur];
-list=pItems(p).map(function(x,j){return {p:pcur,src:x.src,wk:x.w,alt:p.t[1]+' — '+(x.w?x.w.t[1]:(j+1))};});
-openLb(+b.getAttribute('data-j'));
-});
-render();
+  function projClick(e){var b=e.target.closest('[data-p]');if(!b)return;openProject(+b.getAttribute('data-p'));}
+  $('featGrid').addEventListener('click',projClick);
+  $('projGrid').addEventListener('click',projClick);
+  $('pd').addEventListener('click',function(e){
+    if(e.target===this||e.target.closest('#pdClose')){this.close();return;}
+    var b=e.target.closest('.pd-grid button');if(!b)return;
+    var p=PJ[pcur];
+    list=pItems(p).map(function(x,j){return {p:pcur,src:x.src,wk:x.w,alt:p.t[1]+' — '+(x.w?x.w.t[1]:(j+1))};});
+    openLb(+b.getAttribute('data-j'));
+  });
+  render();
 
-  /* keep anchor jumps (menu links) from hiding under the pinned header */
   var hdr=document.querySelector('.top');
   function syncHdr(){document.documentElement.style.setProperty('--hh',hdr.offsetHeight+'px');}
   syncHdr();
